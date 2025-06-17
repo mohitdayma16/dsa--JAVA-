@@ -13,10 +13,16 @@ public class Que7 {
         if(idx> n){
             return;
         }
+        
+        for(int i=0;i<n-idx;i++){
+            System.out.print(" ");
+        }
         for(int i=0;i<idx * 2-1;i++){
             System.out.print("*");
         }
-        pyramid(idx-1);
+        System.out.println();
+        pyramid(idx+1);
+        
          
     }
 }
